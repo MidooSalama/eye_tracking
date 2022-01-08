@@ -178,6 +178,9 @@ with mp_face_mesh.FaceMesh(
                     y_center = int(bbox[1] + radius)
                     cv2.circle(right_original, (x_center, y_center), radius, (255, 255, 255), 2)
 
+                cv2.line(right_original, (0, 75), (150, 75), (0, 255, 0), 1)
+                cv2.line(right_original, (75, 0), (75, 150), (0, 255, 0), 1)
+
                 cv2.imshow("left_eye", left)
                 cv2.imshow("right_eye", right)
                 cv2.imshow("right_eye_original", right_original)
